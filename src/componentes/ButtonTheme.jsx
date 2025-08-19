@@ -1,8 +1,8 @@
 import React from "react";
 
-import { StyledButton } from "./styles/StyledButton";
+import { ButtonThemeStyled } from "./styles/ButtonThemeStyled";
 
 
 export default function ButtonTheme({onClick, name}) {
-  return <StyledButton onClick={onClick}>{name}</StyledButton>;
+  return <ButtonThemeStyled onClick={onClick}>{name}</ButtonThemeStyled>;
 }

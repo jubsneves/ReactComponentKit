@@ -1,22 +1,33 @@
 export const Theme = {
-  
   light: {
     color: {
+      primaryMainOpacity: "rgba(76, 59, 207, 0.7)",
+      primaryMainOpacity: "rgba(99, 164, 255, 0.7)",
       primaryMain: "#4C3BCF",
       primaryLight: "#63a4ff",
       primaryDark: "#402E7A",
-      primaryContrastText: "#fff",
       backgroundPaper: "#fff",
-      backgroundDefault: "#fafafa",
+      backgroundDefaultOpacity: "rgba(199, 196, 252, 0.8)",
+      backgroundDefault: "#e8e7ff",
+      primaryContrastText: "#fff",
       textPrimary: "#000",
       textSecondary: "#555",
     },
-    fontSize: {
-      xs: "12px",
-      sm: "14px",
-      md: "16px",
-      lg: "20px",
-      xl: "24px",
+    size: {
+      xs: "0.75rem",
+      sm: "0.875rem",
+      md: "1rem",
+      lg: "1.25rem",
+      xl: "1.5rem",
+    },
+    weight: {
+      light: '300',
+      regular: '400',
+      medium: '500',
+      semiBold: '600',
+      bold: '700',
+      extraBold: '800',
+      black: '900',
     },
     spacing: {
       xxs: "4px",
@@ -26,26 +37,48 @@ export const Theme = {
       lg: "20px",
       xl: "24px",
       xxl: "32px",
+      xxxl: "60px",
+    },
+    radius: {
+      xs: "6px",
+      sm: "12px",
+      md: "18px",
+      lg: "100px",
     },
   },
 
+
+
+  
   dark: {
     color: {
+      primaryMainOpacity: "rgba(61, 194, 236, 0.7)",
+      primaryLightOpacity: "rgba(227, 242, 253, 0.7)",
       primaryMain: "#3DC2EC",
       primaryLight: "#e3f2fd",
       primaryDark: "#3DC2EC",
       primaryContrastText: "#fff",
-      backgroundPaper: "#424242",
+      backgroundPaper: "#232122",
+      backgroundDefaultOpacity: "rgba(48, 48, 48, 0.8)",
       backgroundDefault: "#303030",
       textPrimary: "#fff",
       textSecondary: "#bbb",
     },
-    fontSize: {
-      xs: "12px",
-      sm: "14px",
-      md: "16px",
-      lg: "20px",
-      xl: "24px",
+    size: {
+      xs: "0.75rem",
+      sm: "0.875rem",
+      md: "1rem",
+      lg: "1.25rem",
+      xl: "1.5rem",
+    },
+    weight: {
+      light: '300',
+      regular: '400',
+      medium: '500',
+      semiBold: '600',
+      bold: '700',
+      extraBold: '800',
+      black: '900',
     },
     spacing: {
       xxs: "4px",
@@ -55,7 +88,13 @@ export const Theme = {
       lg: "20px",
       xl: "24px",
       xxl: "32px",
+      xxxl: "60px",
+    },
+    radius: {
+      xs: "6px",
+      sm: "12px",
+      md: "18px",
+      lg: "100px",
     },
   },
-  
 };
