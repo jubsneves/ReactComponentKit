@@ -17,9 +17,18 @@ export const HeaderStyled = styled.header`
   backdrop-filter: blur(8px);
 `;
 
-export const Logo = styled.img`
-  width: 40px;
-  height: 40px;
+export const Brand = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  color: ${({ theme }) => theme.color.primaryLight};
+`;
+
+export const Logo = styled.p`
+  font-family: "Poppins", sans-serif;
+  font-size: ${({ theme }) => theme.size.lg};
+  font-weight: ${({ theme }) => theme.weight.semiBold};
 `;
 
 export const NavItems = styled.ul`
@@ -27,6 +36,7 @@ export const NavItems = styled.ul`
   flex-direction: row;
   gap: ${({ theme }) => theme.spacing.xl};
   list-style: none;
+  align-items: center;
 
   a {
     text-decoration: none;

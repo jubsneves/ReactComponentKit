@@ -10,14 +10,16 @@ export const ButtonThemeStyled = styled.button`
   padding: 8px;
   border-radius: 50%;
   transition: background 0.3s ease, transform 0.3s ease;
+  width: 40px;
+  height: 40px;
 
   svg {
-    color: ${({ theme }) => theme.color.primaryMain};
+    color: ${({ theme }) => theme.color.primaryLight};
     transition: transform 0.5s ease, color 0.3s ease;
   }
 
   &:hover {
-    background: ${({ theme }) => theme.color.primaryLight};
+    background: ${({ theme }) => theme.color.primaryMain};
     transform: scale(1.1);
   }
 

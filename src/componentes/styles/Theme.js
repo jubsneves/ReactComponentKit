@@ -1,17 +1,15 @@
 export const Theme = {
   light: {
     color: {
-      primaryMainOpacity: "rgba(76, 59, 207, 0.7)",
-      primaryMainOpacity: "rgba(99, 164, 255, 0.7)",
-      primaryMain: "#4C3BCF",
-      primaryLight: "#63a4ff",
-      primaryDark: "#402E7A",
-      backgroundPaper: "#fff",
-      backgroundDefaultOpacity: "rgba(199, 196, 252, 0.8)",
-      backgroundDefault: "#e8e7ff",
-      primaryContrastText: "#fff",
-      textPrimary: "#000",
-      textSecondary: "#555",
+      primaryMain: "#36662F",
+      primaryLight: "#5FB54C",
+      primaryDark: "#2E432B",
+      backgroundPaper: "#FFFFFF",
+      backgroundDefaultOpacity: "rgba(235, 235, 235, 0.8)",
+      backgroundDefault: "#EBEBEB",
+      primaryContrastText: "#000",
+      textPrimary: "#0B0E10",
+      textSecondary: "#303030",
     },
     size: {
       xs: "0.75rem",
@@ -21,13 +19,13 @@ export const Theme = {
       xl: "1.5rem",
     },
     weight: {
-      light: '300',
-      regular: '400',
-      medium: '500',
-      semiBold: '600',
-      bold: '700',
-      extraBold: '800',
-      black: '900',
+      light: "300",
+      regular: "400",
+      medium: "500",
+      semiBold: "600",
+      bold: "700",
+      extraBold: "800",
+      black: "900",
     },
     spacing: {
       xxs: "4px",
@@ -47,22 +45,17 @@ export const Theme = {
     },
   },
 
-
-
-  
   dark: {
     color: {
-      primaryMainOpacity: "rgba(61, 194, 236, 0.7)",
-      primaryLightOpacity: "rgba(227, 242, 253, 0.7)",
-      primaryMain: "#3DC2EC",
-      primaryLight: "#e3f2fd",
-      primaryDark: "#3DC2EC",
-      primaryContrastText: "#fff",
+      primaryMain: "#5FB54C",
+      primaryLight: "#75FA4E",
+      primaryDark: "#36662F",
+      primaryContrastText: "#FFFFFF",
       backgroundPaper: "#232122",
       backgroundDefaultOpacity: "rgba(48, 48, 48, 0.8)",
       backgroundDefault: "#303030",
-      textPrimary: "#fff",
-      textSecondary: "#bbb",
+      textPrimary: "#FFFFFF",
+      textSecondary: "#EBEBEB",
     },
     size: {
       xs: "0.75rem",
@@ -72,13 +65,13 @@ export const Theme = {
       xl: "1.5rem",
     },
     weight: {
-      light: '300',
-      regular: '400',
-      medium: '500',
-      semiBold: '600',
-      bold: '700',
-      extraBold: '800',
-      black: '900',
+      light: "300",
+      regular: "400",
+      medium: "500",
+      semiBold: "600",
+      bold: "700",
+      extraBold: "800",
+      black: "900",
     },
     spacing: {
       xxs: "4px",
