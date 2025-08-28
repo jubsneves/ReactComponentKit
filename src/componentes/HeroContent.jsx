@@ -12,10 +12,10 @@ export default function HeroContent(props) {
   return (
     <HeroContentStyled>
       <LeftSide>
-        <Heading>{props.data.title}</Heading>
-        <Description>{props.data.description}</Description>
+        <Heading>{props.content.title}</Heading>
+        <Description>{props.content.description}</Description>
       </LeftSide>
-      <Image src={props.data.img} />
+      <Image src={props.content.img} />
       <Shape />
     </HeroContentStyled>
   );

@@ -5,8 +5,8 @@ import { UnfoldHorizontal, Mountain, PlugZap } from "lucide-react";
 import Global from "./componentes/styles/Global";
 import Header from "./componentes/Header";
 import HeroContent from "./componentes/HeroContent";
-import TabButton from "./componentes/TabButton";
-import { TabContainer } from "./componentes/styles/TabButtonStyled";
+import ButtonTab from "./componentes/ButtonTab";
+import { TabContainer } from "./componentes/styles/ButtonTabStyled";
 import { EXAMPLES } from "./data-hero";
 import "./App.css";
 
@@ -14,6 +14,24 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [selectedTab, setSelectedTab] = useState("hybridBikes");
   const toggleTheme = () => setIsDarkMode((prev) => !prev);
+
+  const tabs = [
+    {
+      key: "hybridBikes",
+      label: "Hybrid Bikes",
+      icon: PlugZap,
+    },
+    {
+      key: "mountainBikes",
+      label: "Mountain Bikes",
+      icon: PlugZap,
+    },
+    {
+      key: "foldingBikes",
+      label: "Folding Bikes",
+      icon: PlugZap,
+    },
+  ];
 
   function handleSelect(selectedButton) {
     setSelectedTab(selectedButton);
@@ -24,26 +42,17 @@ function App() {
       <>
         <Global />
         <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-        <HeroContent data={EXAMPLES[selectedTab]} />
+        <HeroContent content={EXAMPLES[selectedTab]} />
         <TabContainer>
-          <TabButton
-            onSelect={() => handleSelect("hybridBikes")}
-            icon={PlugZap}
-            label="Hybrid Bikes"
-            active={selectedTab === "hybridBikes"}
-          />
-          <TabButton
-            onSelect={() => handleSelect("mountainBikes")}
-            icon={Mountain}
-            label="Mountain Bikes"
-            active={selectedTab === "mountainBikes"}
-          />
-          <TabButton
-            onSelect={() => handleSelect("foldingBikes")}
-            icon={UnfoldHorizontal}
-            label="Folding Bikes"
-            active={selectedTab === "foldingBikes"}
-          />
+          {tabs.map((tab) => (
+            <ButtonTab
+              onSelect={() => handleSelect(tab.key)}
+              icon={tab.icon}
+              label={tab.label}
+              active={selectedTab === tab.key}
+              key={tab.key}
+            />
+          ))}
         </TabContainer>
       </>
     </ThemeProvider>

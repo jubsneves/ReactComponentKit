@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
+const shouldForwardProp = (prop) => prop !== "active";
+
 export const TabContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: ${({ theme }) => theme.spacing.md};
-  // margin-top: ${({ theme }) => theme.spacing.lg};
 `;
 
-export const Tab = styled.button`
+export const ButtonTab = styled.button.withConfig({ shouldForwardProp })`
   cursor: pointer;
   padding: ${({ theme }) => theme.spacing.xs} ${({ theme }) => theme.spacing.lg};
   background-color: ${({ active, theme }) =>
